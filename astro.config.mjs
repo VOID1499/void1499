@@ -3,8 +3,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-   
-    base:"/",
-    outDir:"./docs",
+    site:"https://VOID1499.github.io",
     integrations:[tailwind()],
 });
