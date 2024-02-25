@@ -1,0 +1,14 @@
+---
+const { href, src , alt ,class: className} = Astro.props;
+
+---
+
+{
+href != undefined ? <a href={href} target="_blank">
+    <img  class:list={['',className]}  src={src} alt={alt}></img>
+    </a> 
+:  <img class:list={['',className]}  src={src} alt={alt}> </img> 
+}
+
+
+
