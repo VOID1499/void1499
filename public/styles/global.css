@@ -64,3 +64,4 @@ body{
     0% { transform: translateX(0);opacity: 100; }
     100% { transform: translateX(70px);opacity: 0; }
   }
+

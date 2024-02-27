@@ -1,4 +1,6 @@
-let observer = new IntersectionObserver(verificarVisibilidad,{});
+let observer = new IntersectionObserver(verificarVisibilidad,{
+    threshold:.5
+});
 let skillsSection = document.querySelectorAll("[data-animation]")
 
 skillsSection.forEach(element => {
