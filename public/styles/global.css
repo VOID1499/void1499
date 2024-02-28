@@ -3,7 +3,11 @@ body{
     background-color: #1A1E23;
 }
 
-.gradiente-1{
+.bg-base{
+  background-color: #1A1E23;
+}
+
+.border-gradient-1{
     border: 4px solid transparent;
     border-radius: 50em;
     border-image: linear-gradient(to right,#5D00FF, #FFB800) 1;
@@ -11,33 +15,11 @@ body{
 
 
 
-.text-color-1{
-    color: #1A1E23;
-}
+
 
 
 .slide-up{
-
-    view-timeline-name: --slide;
-    view-timeline-axis: block;
-
-    animation-timeline: --slide;
-
-    animation: slide-up .5s ease-in-out  1 reverse both;
-}
-
-
-
-.delay-0{
-    animation-delay: 0;
-}
-
-.delay-1{
-    animation-delay: .1s;
-}
-
-.delay-2{
-    animation-delay: .2s;
+    animation: slide-up .5s ease-in-out  1 reverse both ;
 }
 
 @keyframes slide-up {
@@ -64,4 +46,52 @@ body{
     0% { transform: translateX(0);opacity: 100; }
     100% { transform: translateX(70px);opacity: 0; }
   }
+
+  .delay-0{
+    animation-delay: 0;
+}
+
+.delay-1{
+    animation-delay: .1s;
+}
+
+.delay-2{
+    animation-delay: .2s;
+}
+
+
+
+
+
+.box-1:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg,  #FFB800 0%, #5D00FF 100% );
+  filter: blur(20px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+
+.box-2:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #5D00FF 0%, #FF0073 100% );
+  filter: blur(20px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
 

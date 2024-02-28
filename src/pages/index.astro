@@ -8,24 +8,24 @@ import Layout from "../components/Layout.astro";
 
 <Layout>
 	
-	<header  class="grid grid-cols-4 px-5  pt-0 pb-5 gap-y-1   border gradiente-1  ">
+	<header  class="relative grid grid-cols-4 px-5 mx-5 sm:mx-0  pt-0 pb-5 gap-y-1   bg-base box-1 ">
 	
 	<div class="w-40 tra rounded-full col-span-6 sm:col-span-1 mx-auto sm:mx-0 my-5   overflow-hidden transition ease-in duration-700  " >
 		<img class="object-cover" src="/void1499/images/me.jpeg" alt="">
 	</div>
 	
-	<p class="font-medium col-span-6 " >
-		Tecnico en programacion y analisis de sistemas 
+	<p data-animation="slide-left" class="font-medium col-span-6 delay-1" >
+		Técnico en programación y análisis de sistemas 
 	</p>
 	
 	<h1 data-animation="slide-right" class="font-semibold text-2xl sm:text-3xl col-span-5   text-start ">
 		Desarrollo web Frontend/Backend.Diseño UI. <br>
 	</h1>
 	
-	<h2 class="text-medium  col-span-5 " >
+	<h2 data-animation="slide-right" class="text-medium  col-span-5 delay-2   " >
 		erick.olivares.gonzalez@gmail.com
 	</h2>
-	<div class="col-span-1 row-span-2 flex flex-col gap-y-5  col-start-6 row-start-3 " >
+	<div  class="col-span-1  row-span-2 flex flex-col gap-y-5  col-start-6 row-start-3 " >
 			<IconLink  class="w-6" src="/void1499/icons/linkedin.svg" href="https://www.linkedin.com/in/erick-olivares/"  ></IconLink>
 			<IconLink class="w-6" src="/void1499/icons/github.svg" href="https://github.com/VOID1499" ></IconLink>
 	</div>
@@ -35,6 +35,11 @@ import Layout from "../components/Layout.astro";
 	</header>
 
 
+
+	<p data-animation="slide-left" class="font-thin text-start px-10 sm:px-0 text-1xl">
+		Hola, soy Erick, técnico en programación principalmente enfocado en el desarrollo web, con +1 año de experiencia profesional en desarrollo y soporte y +5 años estudiando de forma autónoma y formal. No me considero una mente brillante ni mucho menos, pero pienso que no es necesario, ya que las mejores ideas nacen a través del trabajo y la práctica diaria. <br>
+		Programar va mas alla de escribir codigo...
+	</p>
 		
 
 	<section  class="w-full flex flex-col xl:flex-row px-10 sm:px-0    gap-5 sm:gap-2 " >
@@ -76,7 +81,7 @@ import Layout from "../components/Layout.astro";
 
 
 
-	<article data-animation="slide-left"  class="h-auto flex flex-col rounded-sm mx-10 sm:mx-0  flex-wrap gap-3 border gradiente-1  opacity-0">
+	<article data-animation="slide-left"  class="h-auto flex flex-col rounded-sm mx-10 sm:mx-0  flex-wrap gap-3 border border-gradient-1  opacity-0">
 		
 		<div class="w-full h-auto flex flex-wrap justify-between gap-5  py-5 px-5 sm:px-10 " >
 			<h1 class="text-semibold text-2xl " >Cliente Unsplash API</h1>
@@ -97,7 +102,7 @@ import Layout from "../components/Layout.astro";
 
 	</article>
 
-	<article data-animation="slide-right" class="h-auto flex flex-col rounded-sm mx-10 sm:mx-0  flex-wrap gap-3 border gradiente-1  opacity-0">
+	<article data-animation="slide-right" class="h-auto flex flex-col rounded-sm mx-10 sm:mx-0  flex-wrap gap-3 border border-gradient-1  opacity-0">
 		
 		<div class="w-full h-auto flex flex-wrap justify-between gap-5  py-5 px-5 sm:px-10 " >
 			<h1 class="text-semibold text-2xl " >Task App</h1>
