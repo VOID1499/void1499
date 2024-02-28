@@ -8,27 +8,31 @@ import Layout from "../components/Layout.astro";
 
 <Layout>
 	
-	<header  class="relative grid grid-cols-4 px-5 mx-5 sm:mx-0  pt-0 pb-5 gap-y-1   bg-base box-1 ">
+	<header  class="relative flex flex-col px-5 mx-5 sm:mx-0  pt-0 pb-5 gap-y-1   bg-base box-1 ">
 	
 	<div class="w-40 tra rounded-full col-span-6 sm:col-span-1 mx-auto sm:mx-0 my-5   overflow-hidden transition ease-in duration-700  " >
 		<img class="object-cover" src="/void1499/images/me.jpeg" alt="">
 	</div>
 	
-	<p data-animation="slide-left" class="font-medium col-span-6 delay-1" >
+	<p data-animation="slide-left" class="font-medium  delay-1" >
 		Técnico en programación y análisis de sistemas 
 	</p>
 	
-	<h1 data-animation="slide-right" class="font-semibold text-2xl sm:text-3xl col-span-5   text-start ">
+
+	<h1 data-animation="slide-right" class=" font-semibold text-2xl sm:text-3xl    text-start ">
 		Desarrollo web Frontend/Backend.Diseño UI. <br>
 	</h1>
 	
-	<h2 data-animation="slide-right" class="text-medium  col-span-5 delay-2   " >
-		erick.olivares.gonzalez@gmail.com
-	</h2>
+	<div class="flex">
+		<h2 data-animation="slide-right" class=" text-medium   delay-2   " >
+			erick.olivares.gonzalez@gmail.com
+		</h2>
+	
+		<div  class=" flex ms-auto gap-2   " >
+				<IconLink  class="w-6" src="/void1499/icons/linkedin.svg" href="https://www.linkedin.com/in/erick-olivares/"  ></IconLink>
+				<IconLink class="w-6" src="/void1499/icons/github.svg" href="https://github.com/VOID1499" ></IconLink>
+		</div>
 
-	<div  class="col-span-1  flex flex-row sm:flex-col gap-2   " >
-			<IconLink  class="w-6" src="/void1499/icons/linkedin.svg" href="https://www.linkedin.com/in/erick-olivares/"  ></IconLink>
-			<IconLink class="w-6" src="/void1499/icons/github.svg" href="https://github.com/VOID1499" ></IconLink>
 	</div>
 	
 	</header>
