@@ -3,7 +3,7 @@
 import "../../public/styles/global.css";
 import IconLink from "../components/IconLink.astro";
 import Layout from "../components/Layout.astro";
-let title = "🐧Desarrollo web Frontend Backend"
+let title = "Desarrollo web Frontend Backend"
 let subtitle = "Técnico en Programación y Análisis de Sistemas"
 import { tags ,projects,tools } from "../utils/data";
 
@@ -13,17 +13,22 @@ import { tags ,projects,tools } from "../utils/data";
 
 <Layout>
 	
-	<header  class=" w-4/5 sm:w-2/3  self-center flex flex-col gap-2">
-		<h1 data-animation="slide-right" class=" font-semibold text-2xl sm:text-4xl    text-start ">
-			{title}
-		</h1>
-		<h2 data-animation="slide-right" class=" font-semibold text-1xl sm:text-2xl    text-start ">
-			{subtitle}
-		</h2>
-	</header>
-
-
+	<header  class=" w-4/5 sm:w-2/3  self-center flex  ">
 		
+		<div class="">
+			<img class="w-full sm:w-32 " src="/void1499/images/tux.gif" alt="linux-tux">
+		</div>
+		<div class=" flex flex-col  justify-center">
+			<h1 data-animation="slide-right" class=" font-semibold text-2xl sm:text-4xl text-start ">
+				{title}
+			</h1>
+			<h2 data-animation="slide-right" class=" font-semibold text-1xl sm:text-2xl   text-start ">
+				{subtitle}
+			</h2>
+		</div>
+	
+	</header>
+ 
 
 	<section  class="w-4/5 sm:w-2/3  self-center grid grid-cols-6 gap-5 bg-dark" >
 
