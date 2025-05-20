@@ -13,6 +13,7 @@
   --color-limon-dark: #2A410C
 }
 
+
 .scale-up{
   animation: scale-up .5s ease-in-out  1  both  ;
 }
