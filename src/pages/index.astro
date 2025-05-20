@@ -1,6 +1,11 @@
 ---
+
+import "../../public/styles/global.css";
 import IconLink from "../components/IconLink.astro";
 import Layout from "../components/Layout.astro";
+let title = "🐧Desarrollo web Frontend Backend"
+let subtitle = "Técnico en Programación y Análisis de Sistemas"
+import { tags ,projects,tools } from "../utils/data";
 
 ---
 
@@ -8,130 +13,93 @@ import Layout from "../components/Layout.astro";
 
 <Layout>
 	
-	<header  class="relative flex flex-col px-5 mx-5 sm:mx-0  pt-0 pb-5 gap-y-1   bg-base box-1 ">
-	
-	<div class="w-40 tra rounded-full col-span-6 sm:col-span-1 mx-auto sm:mx-0 my-5   overflow-hidden transition ease-in duration-700  " >
-		<img class="object-cover" src="/void1499/images/me.jpeg" alt="">
-	</div>
-	
-	<p data-animation="slide-left" class="font-medium  delay-1" >
-		Técnico en programación y análisis de sistemas 
-	</p>
-	
-
-	<h1 data-animation="slide-right" class=" font-semibold text-2xl sm:text-3xl    text-start ">
-		Desarrollo web Frontend/Backend.Diseño UI. <br>
-	</h1>
-	
-	<div class="flex flex-col sm:flex-row  gap-1">
-		<h2 data-animation="slide-right" class="font-medium   delay-2   " >
-			erick.olivares.gonzalez@gmail.com
+	<header  class=" w-4/5 sm:w-2/3  self-center flex flex-col gap-2">
+		<h1 data-animation="slide-right" class=" font-semibold text-2xl sm:text-4xl    text-start ">
+			{title}
+		</h1>
+		<h2 data-animation="slide-right" class=" font-semibold text-1xl sm:text-2xl    text-start ">
+			{subtitle}
 		</h2>
-	
-		<div  class=" flex gap-2 ms-auto  " >
-				<IconLink  class="w-6" src="/void1499/icons/linkedin.svg" href="https://www.linkedin.com/in/erick-olivares/"  ></IconLink>
-				<IconLink class="w-6" src="/void1499/icons/github.svg" href="https://github.com/VOID1499" ></IconLink>
-		</div>
-
-	</div>
-	
 	</header>
 
 
-
-	<p data-animation="slide-left" class="font-thin text-start px-10 sm:px-0 text-1xl opacity-0">
-		Hola soy Erick , programador principalmente enfocado en el desarrollo web, con +1 año de experiencia profesional en desarrollo y soporte y +5 años estudiando de forma autónoma y formal. No me considero una mente brillante ni mucho menos, pero pienso que no es necesario, ya que las mejores ideas nacen a través del trabajo y la práctica diaria. <br>
-		Programar va mas alla de escribir codigo...
-	</p>
 		
 
-	<section  class="w-full flex flex-col xl:flex-row px-10 sm:px-0    gap-5 sm:gap-2 " >
+	<section  class="w-4/5 sm:w-2/3  self-center grid grid-cols-6 gap-5 bg-dark" >
 
-		<div data-animation="slide-up"  class="w-full xl:w-1/3  rounded-sm border border-gray-600 rounded-sm filter drop-shadow-lg py-5  delay-0  opacity-0" >
-			<ul class="w-full flex flex-wrap justify-center  gap-2 " >
-				<IconLink class="w-7" src="/void1499/icons/javascript.svg" alt="javascript" ></IconLink>
-				<IconLink class="w-7" src="/void1499/icons/typescript.svg" alt="yypescript" ></IconLink>
-				<IconLink class="w-7" src="/void1499/icons/angular.svg" alt="angular" ></IconLink>
-				<IconLink class="w-7" src="/void1499/icons/rxjs.svg" alt="rxjs" ></IconLink>
-				<IconLink class="w-7" src="/void1499/icons/tailwind.svg" alt="tailwind" ></IconLink>
-				<IconLink class="w-7" src="/void1499/icons/html.svg" alt="html" ></IconLink>
-				<IconLink class="w-7" src="/void1499/icons/css.svg" alt="css" ></IconLink>
-			</ul>
-			<h1 class="text-center mt-5" >Frontend</h1>
-		</div>
+		<h2 class="col-span-6 font-semibold text-2xl text-white-noise w-full ">
+			Tecnologias / Herramientas 🛠️
+		</h2>
 
-		<div data-animation="slide-up" class="w-full xl:w-1/3  rounded-sm border border-gray-600 rounded-sm filter drop-shadow-lg py-5  delay-1  opacity-0 " >
-			<ul class="w-full flex flex flex-wrap justify-center  gap-2 " >
-				<IconLink class="w-7" src="/void1499/icons/node.svg" alt="nodeJs" ></IconLink>
-				<IconLink class="w-7" src="/void1499/icons/dotnet.svg" alt=".net" ></IconLink>
-				<IconLink class="w-7" src="/void1499/icons/c-sharp.svg" alt="c-sharp" ></IconLink>
-				<IconLink class="w-7" src="/void1499/icons/mysql.svg" alt="mySql" ></IconLink>
-			</ul>
-			<h1 class="text-center mt-5" >Backend</h1>
-		</div>
 
-		<div data-animation="slide-up" class="w-full xl:w-1/3  rounded-sm border border-gray-600 rounded-sm filter drop-shadow-lg py-5  delay-2  opacity-0" >
-			<ul class="w-full flex flex flex-wrap justify-center  gap-2 " >
-				<IconLink class="w-7" src="/void1499/icons/git.svg" alt="git" ></IconLink>
-				<IconLink class="w-7" src="/void1499/icons/github.svg" alt="github" ></IconLink>
-				<IconLink class="w-7" src="/void1499/icons/figma.svg" alt="figma" ></IconLink>
-				<IconLink class="w-7" src="/void1499/icons/postman.svg" alt="postman" ></IconLink>
-			</ul>
-			<h1 class="text-center mt-5" >Otras herramientas</h1>
-		</div>
+		{tools.map(item => (
+					<div class="relative col-span-6 sm:col-span-2 row-span-10 rounded-md bg-darker p-2 flex flex-col shadow-slate-950/50 shadow-sm overflow-hidden  "  >
+						<div class="flex flex-wrap justify-center  gap-2  h-full z-10 bg-transparent">
+							{
+								item.icons.map(icon=>(
+									<IconLink  class="w-7" src={`/void1499/icons/${icon}.svg`}  ></IconLink>
+								))
+							}
+						</div>
+						<span class="text-helix font-semibold text-end z-10">
+							{item.subtitle}
+						</span>
+						<div   class="scale-up delay-2  absolute w-32 h-32 bg-linear-to-r/decreasing from-indigo-500 to-teal-400 blur-2xl mx-auto inset-x-0 -top-1/2 ">
+						</div>
+					</div>
+			))}
+		
 	
 
 	</section>
-
-
-
-	<article data-animation="slide-left"  class="h-auto flex flex-col rounded-sm mx-10 sm:mx-0  flex-wrap gap-3 border border-gradient-1  opacity-0">
-		
-		<div class="w-full h-auto flex flex-wrap justify-between gap-5  py-5 px-5 sm:px-10 " >
-			<h1 class="text-semibold text-2xl " >Cliente Unsplash API</h1>
-			<p class="w-auto  text-left ">
-				Cliente de la <span class="font-semibold text-green-300" >APIR REST</span> de <a
-				class="underline font-semibold text-green-300" target="_blank" href="https://unsplash.com/es">Unsplash</a>
-				que proporciona imágenes con calidad profesional de todo el mundo.
-				Frontend hecho con <span class="text-green-300 font-semibold" >Angular</span> v.17. y <span class="text-green-300 font-semibold" >Tailwind CSS</span>
-			</p>
-
-			<span class="w-auto ml-auto flex flex-wrap gap-2 ">
-				<IconLink class="w-6" src="/void1499/icons/github.svg" href="https://github.com/VOID1499/client-unsplash"  ></IconLink>
-				<IconLink class="w-6" src="/void1499/icons/external-link.svg" href="https://void1499.github.io/unsplashapi"  ></IconLink>
-			</span>
-			
-		</div>
-
-	</article>
-
-	<article data-animation="slide-right" class="h-auto flex flex-col rounded-sm mx-10 sm:mx-0  flex-wrap gap-3 border border-gradient-1  opacity-0">
-		
-		<div class="w-full h-auto flex flex-wrap justify-between gap-5  py-5 px-5 sm:px-10 " >
-			<h1 class="text-semibold text-2xl " >Task App</h1>
-			<p class="w-auto  text-left ">
-				Una app basica de tareas con respaldo de datos como usuario y tareas en el lado del backend.
-				Despliegue del servidor con <span class="font-semibold text-green-300" >NodeJs</span> y  <span class="font-semibold text-green-300" >Express</span> en la plataforma de <a target="_blank" href="https://render.com/" class="underline font-semibold text-green-300" >Render</a> asi como tambien el sitio estatico hecho con <span class="text-green-300 font-semibold" >Angular</span> y <span class="text-green-300 font-semibold" >Bootstrap</span>  en sus versiones modulares.
-				Los datos se encuentran alojados en la plataforma de <a
-				class="underline font-semibold text-green-300" target="_blank" href="https://www.mongodb.com/es/cloud/atlas">MongoDB Atlas</a>.
-
-
-			</p>
-
-			<span class="w-auto ml-auto flex flex-wrap gap-2 ">
-				<IconLink class="w-6" src="/void1499/icons/github.svg" href="https://github.com/VOID1499/node-express-01"  ></IconLink>
-				<IconLink class="w-6" src="/void1499/icons/github.svg" href="https://github.com/VOID1499/taskAPP"  ></IconLink>
-				<IconLink class="w-6" src="/void1499/icons/external-link.svg" href="https://task-app-rtam.onrender.com/"  ></IconLink>
-			</span>
-			
-		</div>
-
-	</article>
-
-
 	
+	<section class="w-4/5 sm:w-2/3  self-center flex flex-wrap gap-2 text-pill ">
+		  {tags.map(item => (
+				<span class="px-3 py-1  rounded-full shadow-slate-950/50 shadow-sm">
+					{item}
+				</span>
+			))}
+	</section>
 
-	
+
+	<!-- Proyectos -->
+	<section class="w-4/5 sm:w-2/3  self-center flex flex-wrap gap-5 ">
+
+		<h2 class="col-span-6 font-semibold text-2xl text-white-noise  w-full">
+			Proyectos 🕹️
+		</h2>
+		  {projects.map(project => (
+			<div data-animation="slide-up" class="relative flex flex-col gap-5 text-white-noise w-full  p-5 rounded-sm overflow-hidden " >
+				
+				<h2 class="font-semibold text-2xl ">
+					{project.title}
+				</h2>
+				<p class="text-white-noise">
+					{project.description}
+				</p>
+
+					<span class=" w-full flex flex-wrap  gap-2">
+					{
+						project.tags.map(tag=>(
+							<span class="px-3 py-1  rounded-full shadow-slate-950/50 shadow-sm">
+								{tag}
+							</span>
+						))
+					}
+				</span>
+
+				<span class=" w-full flex justify-end items-center gap-2">
+					{
+						project.links.map(link=>(
+							<IconLink  class="w-7" src={`/void1499/icons/${link.icon}.svg`}  href={link.href} ></IconLink>
+						))
+					}
+				</span>
+
+
+			</div>
+			))}
+	</section>
 
 
 	
