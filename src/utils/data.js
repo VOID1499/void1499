@@ -59,10 +59,10 @@ export const projects = [
 	},
 
       {
-		title:"Chat API / WebSocket Server  ",
+		title:"Chat servidor Web API + WebSocket",
 		description:
 		`
-        HTPP REST API y websocket server para chat y servir SPA.Autenticacion Jsonwebtoken
+        Servidor hibrido para autenticación y comunicación websocket para chat
 		`,
 		links:[
 			{
@@ -71,7 +71,7 @@ export const projects = [
 			}
         
 		],
-        tags:["nodejs","express","api","json web token","web socket","cors","dotenv"]
+        tags:["nodejs","express","api","json web token","web socket","cors","dotenv","zod","mongodb"]
 
 	}
 ]
