@@ -40,9 +40,6 @@ export const projects = [
 		description:
 		`
 		Proyecto playground para integracion y despliegue continuo en AWS EC2.
-        Variables de entorno para conexion SSH.
-        Workflow Deploy on push main branch -> linter build -> deploy
-        	
 		`,
 		links:[
 			{
