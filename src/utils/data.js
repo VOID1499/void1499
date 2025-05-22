@@ -1,4 +1,4 @@
-export const tags = ["Web Socket","VSCode","GitHub Actions","HTTP","Interfaces","Inyección de dependecias","MVC","Interfaces","POO","Strapi CMS","Postman"]
+export const tags = ["Web Socket","VSCode","GitHub Actions","HTTP","Interfaces","Inyección de dependecias","MVC","POO","Strapi CMS","Postman"]
 
 
 
@@ -59,7 +59,7 @@ export const projects = [
 	},
 
       {
-		title:"Chat servidor Web API + WebSocket",
+		title:"Chat Web API + WebSocket",
 		description:
 		`
         Servidor hibrido para autenticación y comunicación websocket para chat
