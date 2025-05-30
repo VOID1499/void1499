@@ -11,10 +11,15 @@ export const projects = [
         Almacenamiento local para funcionalidad sin conexión.
 		`,
 		links:[
+				{
+				href:"https://main.d12qpgoedwt822.amplifyapp.com/",
+				icon:"external-link"
+			},
 			{
 				href:"https://github.com/VOID1499/access-control",
 				icon:"github"
 			}
+	
 		],
         tags:["angularx-qrcode","html5-qrcode","momentjs","pwa","index db"]
 
