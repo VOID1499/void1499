@@ -4,6 +4,22 @@ export const tags = ["Web Socket","VSCode","GitHub Actions","HTTP","Interfaces",
 
 export const projects = [
 	{
+		title:"Gestion de gimnasio y lavanderia",
+		description:
+		`
+        Herramienta para las gestion de reservas en lavanderia y gimnasio de condominio. Para coordinar el uso de espacio comun como gimnasio (maximo de personas y horario por personas).Uso de lavanderia con sistema de encolamiento o cola(por desarrollar)
+		`,
+		links:[
+				{
+				href:"https://void1499.github.io/tools/",
+				icon:"external-link"
+			}
+	
+		],
+        tags:["Supabase","DaysyUi","momentjs","TailwindCss"]
+
+	},
+	{
 		title:"Control de acceso",
 		description:
 		`
