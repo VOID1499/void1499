@@ -7,7 +7,7 @@ export const projects = [
 		title:"Gestion de gimnasio y lavanderia",
 		description:
 		`
-        Herramienta para las gestion de reservas en lavanderia y gimnasio de condominio. Para coordinar el uso de espacio comun como gimnasio (maximo de personas y horario por personas).Uso de lavanderia con sistema de encolamiento o cola(por desarrollar)
+        Herramienta para las gestion de reservas en lavanderia y gimnasio de condominio. Para coordinar el uso de espacio comun como gimnasio (maximo de personas y horario por personas).Uso de lavanderia con sistema de encolamiento o cola.
 		`,
 		links:[
 				{
