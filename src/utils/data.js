@@ -20,7 +20,7 @@ export const projects = [
 
 	},
 	{
-		title:"Control de acceso",
+		title:"Control de acceso PWA",
 		description:
 		`
         Control de acceso para seguridad en instalaciones autenticación de personal con scaneo QR de cedula o generado automatico.Busqueda por rut.
