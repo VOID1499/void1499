@@ -1,4 +1,4 @@
-export const tags = ["Web Socket","VSCode","GitHub Actions","Docker","Strapi CMS","Supabase","Pruebas","Jasmine/Karma","Jest"]
+export const tags = ["Web Socket","VSCode","GitHub Actions","Docker","Strapi CMS","Supabase","Pruebas Unitarias","Jasmine/Karma","Jest"]
 
 
 
