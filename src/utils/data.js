@@ -1,4 +1,4 @@
-export const tags = ["Web Socket","VSCode","GitHub Actions","HTTP","Interfaces","Inyección de dependecias","MVC","POO","Strapi CMS","Postman"]
+export const tags = ["Web Socket","VSCode","GitHub Actions","Docker","Strapi CMS","Supabase","Pruebas","Jasmine/Karma","Jest"]
 
 
 
@@ -60,7 +60,7 @@ export const projects = [
 		title:"Angular para CI/CD",
 		description:
 		`
-		Proyecto playground para integracion y despliegue continuo en AWS EC2.
+		Proyecto practica para integracion y despliegue continuo en AWS EC2.
 		`,
 		links:[
 			{
@@ -97,7 +97,7 @@ export const projects = [
 
 export const tools = [
     {
-        icons:["angular","rxjs","javascript","typescript","html","css","tailwind","figma","postman"],
+        icons:["angular","rxjs","javascript","typescript","html","css","tailwind","jasmine","karma","jest","figma","postman"],
         subtitle:"Frontend"
     },
     {
@@ -105,7 +105,7 @@ export const tools = [
         subtitle:"Backend"
     },
      {
-        icons:["aws","git","github"],
+        icons:["aws","git","github","docker"],
         subtitle:"Cloud CI/CD"
     },
 

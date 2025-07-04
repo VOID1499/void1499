@@ -39,10 +39,10 @@ import { tags ,projects,tools } from "../utils/data";
 
 		{tools.map(item => (
 					<div class="relative col-span-6 sm:col-span-2 row-span-10 rounded-md bg-darker p-2 flex flex-col shadow-slate-950/50 shadow-sm overflow-hidden  "  >
-						<div class="flex flex-wrap justify-center  gap-2  h-full z-10 bg-transparent">
+						<div class="flex flex-wrap justify-center items-center   gap-1  h-full z-10 bg-transparent">
 							{
 								item.icons.map(icon=>(
-									<IconLink  class="w-7" src={`/void1499/icons/${icon}.svg`}  ></IconLink>
+									<IconLink  class="w-7  flex-initial m-0" src={`/void1499/icons/${icon}.svg`}  ></IconLink>
 								))
 							}
 						</div>
