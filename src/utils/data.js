@@ -57,26 +57,6 @@ export const projects = [
 
 	},
      {
-		title:"Angular para CI/CD",
-		description:
-		`
-		Proyecto practica para integracion y despliegue continuo en AWS EC2.
-		`,
-		links:[
-			{
-				href:"https://github.com/VOID1499/angular-ci-cd",
-				icon:"github"
-			},
-            {
-				href:"https://github.com/VOID1499/angular-ci-cd/blob/main/.github/workflows/deploy.yml",
-				icon:"github"
-			}
-		],
-        tags:["github","github actions","workflows","ci/cd","AWS","EC2"]
-
-	},
-
-      {
 		title:"Chat Web API + WebSocket",
 		description:
 		`

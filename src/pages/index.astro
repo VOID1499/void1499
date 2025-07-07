@@ -57,29 +57,48 @@ import { tags ,projects,tools } from "../utils/data";
 	
 
 	</section>
+
 	
 	<section class="w-4/5 sm:w-2/3  self-center flex flex-wrap gap-2 text-pill ">
-		  {tags.map(item => (
+		{tags.map(item => (
 				<span class="px-3 py-1  rounded-full shadow-slate-950/50 shadow-sm">
 					{item}
 				</span>
 			))}
 	</section>
+	
+	<section class="w-4/5 sm:w-2/3  self-center flex flex-col gap-y-2 bg-darker py-3 ps-3 rounded-2xl">
+		<h2 class=" font-semibold text-2xl text-white-noise ">
+				Integración y despliegue 📦📦
+		</h2>
+		
+		</div>
+		<p class="text-white-noise  ">
+			Flujos de trabajo automatizados para despliegues e integracion continua con 
+			<span class="font-bold text-amber-400">
+				Github Actions - Workflows
+			</span> 
+				<br>
 
+			<span class="font-bold text-amber-400">
+				Docker - Github Container Registry
+			</span> 	
+		</p>
+	</section>
 
 	<!-- Proyectos -->
 	<section class="w-4/5 sm:w-2/3  self-center flex flex-wrap gap-5 ">
 
-		<h2 class="col-span-6 font-semibold text-2xl text-white-noise  w-full">
+		<h2 class="col-span-6 font-semibold text-2xl text-white-noise  w-full ">
 			Proyectos 🕹️
 		</h2>
 		  {projects.map(project => (
 			<div  class="relative flex flex-col gap-5 text-white-noise w-full  p-5 rounded-sm overflow-hidden " >
 				
-				<h2 class="font-semibold text-2xl ">
+				<h2 class="font-semibold text-2xl bg-darker py-3 ps-2 rounded-2xl ">
 					{project.title}
 				</h2>
-				<p class="text-white-noise">
+				<p class="text-white-noise ">
 					{project.description}
 				</p>
 
