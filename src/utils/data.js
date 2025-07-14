@@ -1,4 +1,4 @@
-export const tags = ["Web Socket","VSCode","GitHub Actions","Docker","Strapi CMS","Supabase","Pruebas Unitarias","Jasmine/Karma","Jest"]
+export const tags = ["Web Socket","VSCode","GitHub Actions","Docker","Strapi CMS","Supabase","MySQL","PostgreSQL","Pruebas Unitarias","Jasmine/Karma","Jest"]
 
 
 
@@ -81,7 +81,7 @@ export const tools = [
         subtitle:"Frontend"
     },
     {
-        icons:["node","express","mongodb","mysql","strapi"],
+        icons:["node","express","mongodb","strapi","mysql","postgresql"],
         subtitle:"Backend"
     },
      {
