@@ -3,6 +3,27 @@ export const tags = ["Web Socket","VSCode","GitHub Actions","Docker","Strapi CMS
 
 
 export const projects = [
+
+		{
+		title:"Ecommerce 🛒",
+		description:
+		`
+		Ecommer diseñado y desarrollado sobre Strapi CMS . Integración de KHIPU para pagos. Panel de administracion para gestion de contenido .Diseño y desarrollo de la tienda cliente con Angular SSR. Repositorios privados.
+		`,
+		links:[
+				{
+				href:"https://github.com/VOID1499/tienda-backend.git",
+				icon:"github"
+			},
+			{
+				href:"https://github.com/VOID1499/tienda.git",
+				icon:"github"
+			}
+	
+		],
+        tags:["Strapi CMS","Angular SSR","Khipu API","Docker","PostgreSQL","TailwindCss"]
+
+	},
 	{
 		title:"Gestion de gimnasio y lavanderia",
 		description:
@@ -11,7 +32,7 @@ export const projects = [
 		`,
 		links:[
 				{
-				href:"https://void1499.github.io/tools/",
+				href:"https://github.com/VOID1499/tools.git",
 				icon:"external-link"
 			}
 	
