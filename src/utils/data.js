@@ -33,6 +33,10 @@ export const projects = [
 		links:[
 				{
 				href:"https://github.com/VOID1499/tools.git",
+				icon:"github"
+			},
+			{
+				href:"https://void1499.github.io/tools/",
 				icon:"external-link"
 			}
 	
