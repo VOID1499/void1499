@@ -5,10 +5,11 @@ export const tags = ["Web Socket","VSCode","GitHub Actions","Docker","Strapi CMS
 export const projects = [
 
 		{
-		title:"Ecommerce 🛒",
+		title:"Tienda online 🛒",
 		description:
 		`
-		Ecommer diseñado y desarrollado sobre Strapi CMS . Integración de KHIPU para pagos. Panel de administracion para gestion de contenido .Diseño y desarrollo de la tienda cliente con Angular SSR. Repositorios privados.
+		Proyecto construido sobre Strapi CMS , Postgresql , Angular SSR y Tailwind. Deploy sobre contenedores de Docker.
+		Integraciones con Amazon SES y pasarelas de pago como Khipu.
 		`,
 		links:[
 				{
