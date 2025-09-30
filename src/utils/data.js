@@ -5,7 +5,7 @@ export const tags = ["Web Socket","VSCode","GitHub Actions","Docker","Strapi CMS
 export const projects = [
 
 		{
-		title:"Tienda online 🛒",
+		title:"Tienda online desarrollo Backend y Frontend(Server-Side Rendering)",
 		description:
 		`
 		Proyecto construido sobre Strapi CMS , Postgresql , Angular SSR y Tailwind. Deploy sobre contenedores de Docker.
