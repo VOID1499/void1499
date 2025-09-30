@@ -5,7 +5,7 @@ export const tags = ["Web Socket","VSCode","GitHub Actions","Docker","Strapi CMS
 export const projects = [
 
 		{
-		title:"Tienda online desarrollo Backend y Frontend(Server-Side Rendering)",
+		title:"Tienda online Backend/Frontend(Server-Side Rendering)",
 		description:
 		`
 		Proyecto construido sobre Strapi CMS , Postgresql , Angular SSR y Tailwind. Deploy sobre contenedores de Docker.
@@ -82,22 +82,7 @@ export const projects = [
         tags:["strapi cms","strapi cloud","postgres sql","api rest","postman"]
 
 	},
-     {
-		title:"Chat Web API + WebSocket",
-		description:
-		`
-        Servidor hibrido para autenticación y comunicación websocket para chat
-		`,
-		links:[
-			{
-				href:"https://github.com/VOID1499/chat-server",
-				icon:"github"
-			}
-        
-		],
-        tags:["nodejs","express","api","json web token","web socket","cors","dotenv","zod","mongodb"]
-
-	}
+    
 ]
 
 
