@@ -13,7 +13,7 @@ export const projects = [
 		`,
 		links:[
 				{
-				href:"https://github.com/VOID1499/tienda-backend.git",
+				href:"https://github.com/VOID1499/tienda-api.git",
 				icon:"github"
 			},
 			{
