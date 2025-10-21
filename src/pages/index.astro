@@ -30,10 +30,10 @@ import { tags ,projects,tools } from "../utils/data";
 	</header>
  
 
-	<section  class="w-4/5 sm:w-2/3  self-center grid grid-cols-6 gap-5 bg-dark" >
+	<section  class="w-4/5 sm:w-2/3  self-center grid grid-cols-6 gap-5 " >
 
 		{tools.map(item => (
-					<div class="relative col-span-6 sm:col-span-2 row-span-10 rounded-md bg-darker p-2 flex flex-col  overflow-hidden  "  >
+					<div class="relative col-span-6 sm:col-span-2 row-span-10 rounded-md bg-darker/50 p-2 flex flex-col  overflow-hidden  "  >
 						<div class="flex flex-wrap justify-center items-center   gap-1  h-full z-10 bg-transparent">
 							{
 								item.icons.map(icon=>(
@@ -41,7 +41,7 @@ import { tags ,projects,tools } from "../utils/data";
 								))
 							}
 						</div>
-						<span class="text-helix font-semibold text-end z-10">
+						<span class="text-white-noise font-semibold text-end z-10">
 							{item.subtitle}
 						</span>
 						<!--
@@ -58,15 +58,15 @@ import { tags ,projects,tools } from "../utils/data";
 	
 	<section class="w-4/5 sm:w-2/3  self-center flex flex-wrap gap-2 text-pill ">
 		{tags.map(item => (
-				<span class="px-3 py-1  rounded-full shadow-slate-950/50 shadow-sm">
+				<span class="px-3 py-1 text-white-noise rounded-full shadow-slate-950/50 shadow-sm">
 					{item}
 				</span>
 			))}
 	</section>
 	
-	<section class="w-4/5 sm:w-2/3  self-center flex flex-col gap-y-2 bg-darker py-3 ps-3 rounded-2xl">
+	<section class="w-4/5 sm:w-2/3  self-center flex flex-col gap-2   rounded-2xl">
 		<h2 class=" font-semibold text-2xl text-white-noise ">
-				Desarrollo integración y despliegue 📦📦
+				Desarrollo integración y despliegue
 		</h2>
 		
 		</div>
@@ -81,18 +81,18 @@ import { tags ,projects,tools } from "../utils/data";
 	</section>
 
 	<!-- Proyectos -->
-	<section class="w-4/5 sm:w-2/3  self-center flex flex-wrap gap-5 ">
+	<section class="w-4/5 sm:w-2/3  self-center flex flex-wrap gap-10 ">
 
 		<h2 class="col-span-6 font-semibold text-2xl text-white-noise  w-full ">
 			Proyectos 🕹️
 		</h2>
 		  {projects.map(project => (
-			<div  class="relative flex flex-col gap-5 text-white-noise w-full  p-5 rounded-sm overflow-hidden " >
+			<div  class="relative flex flex-col gap-5 text-white-noise w-full rounded-sm overflow-hidden " >
 				
-				<h2 class="font-semibold text-2xl bg-darker py-3 ps-2 rounded-2xl ">
+				<h2 class="font-semibold text-2xl underline">
 					{project.title}
 				</h2>
-				<p class="text-white-noise ">
+				<p class="text-white-noise font-semibold">
 					{project.description}
 				</p>
 
@@ -119,6 +119,19 @@ import { tags ,projects,tools } from "../utils/data";
 			))}
 	</section>
 
+	<div class="w-full h-screen fixed  top-0 -z-10 flex overflow-hidden ">
+
+		<div class="absolute top-0 w-full h-full bg-black/90 " >
+
+		</div>
+
+		<div class="absolute top-0 w-full h-full bg-gradient-to-t from-emerald-500 z-10" >
+
+		</div>
+		
+		<div class="w-full h-full grid-background">
+		</div>
+	</div>
 
 	
 </Layout>

@@ -64,3 +64,11 @@
     animation-delay: .2s;
 }
 
+
+
+.grid-background {
+  background-image:
+    linear-gradient(to right, #e5e5e5 1px, transparent 1px),
+    linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
+  background-size: 50px 50px; /* tamaño de las celdas */
+}

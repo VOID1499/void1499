@@ -5,20 +5,18 @@ export const tags = ["Web Socket","VSCode","GitHub Actions","Docker","Strapi CMS
 export const projects = [
 
 		{
-		title:"Tienda online Backend/Frontend(Server-Side Rendering)",
+		title:"Michisytarot.cl Tienda Online",
 		description:
 		`
-		Proyecto construido sobre Strapi CMS , Postgresql , Angular SSR y Tailwind. Deploy sobre contenedores de Docker.
-		Integraciones con Amazon SES y pasarelas de pago como Khipu.
+		Proyecto backend sobre Strapi CMS - Integracion con sercios de terceros como Khipu  y AWS Simple Email Service. 
+		Frontend Angular Server-sider rendering optimizado para SEO .Servicio para generar Meta Tags y Sitemaps dinamicos .Servicio para añadir tag Google Analytics.
+		Despliegue sobre arquitectura de contenedores Docker. 
 		`,
 		links:[
-				{
-				href:"https://github.com/VOID1499/tienda-api.git",
-				icon:"github"
-			},
+
 			{
-				href:"https://github.com/VOID1499/tienda.git",
-				icon:"github"
+				href:"https://michisytarot.cl",
+				icon:"external-link"
 			}
 	
 		],
