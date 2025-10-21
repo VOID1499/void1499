@@ -8,9 +8,7 @@ export const projects = [
 		title:"Michisytarot.cl Tienda Online",
 		description:
 		`
-		Proyecto backend sobre Strapi CMS - Integracion con sercios de terceros como Khipu  y AWS Simple Email Service. 
-		Frontend Angular Server-sider rendering optimizado para SEO .Servicio para generar Meta Tags y Sitemaps dinamicos .Servicio para añadir tag Google Analytics.
-		Despliegue sobre arquitectura de contenedores Docker. 
+		Proyecto backend sobre Strapi CMS - Integración con servicios de terceros como Khipu y AWS Simple Email Service. Frontend en Angular con renderizado del lado del servidor optimizado para SEO. Servicio para generar meta tags y sitemaps dinámicos. Servicio para añadir la etiqueta de Google Analytics. Despliegue sobre arquitectura de contenedores Docker. 
 		`,
 		links:[
 
