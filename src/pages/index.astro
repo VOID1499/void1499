@@ -14,9 +14,9 @@ import { tags ,projects,tools } from "../utils/data";
 
 <Layout>
 	
-	<header  class=" w-4/5 sm:w-2/3  self-center flex bg-darker/50 rounded-md p-5 border-1 border-darker   ">
+	<header  class="w-4/5 sm:w-2/3  self-center flex md:bg-darker/50 md:rounded-md md:p-5 md:border-1 md:border-darker   ">
 		
-		<div class="">
+		<div class="hidden md:block">
 			<img class="w-full sm:w-32 " src="/void1499/images/tux.gif" alt="linux-tux">
 		</div>
 		<div class=" flex flex-col  justify-center">
@@ -35,10 +35,10 @@ import { tags ,projects,tools } from "../utils/data";
 	</header>
  
 
-	<section  class="w-4/5 sm:w-2/3  self-center grid grid-cols-6 gap-5 " >
+	<section  class="w-4/5 sm:w-2/3  self-center grid grid-cols-6 gap-10  " >
 
 		{tools.map(item => (
-					<div class="relative col-span-6 sm:col-span-2 row-span-10 rounded-md bg-darker/50 p-2 flex flex-col  overflow-hidden border-1 border-darker  "  >
+					<div class="relative col-span-6 sm:col-span-2 row-span-5 rounded-md bg-darker/50 p-2 flex flex-col  overflow-hidden border-1 border-darker  "  >
 						<div class="flex flex-wrap justify-center items-center   gap-1  h-full z-10 bg-transparent">
 							{
 								item.icons.map(icon=>(
@@ -46,7 +46,7 @@ import { tags ,projects,tools } from "../utils/data";
 								))
 							}
 						</div>
-						<span class="text-white-noise font-semibold text-end z-10">
+						<span class="absolute bottom-2 right-2  text-white-noise font-semibold text-end z-10">
 							{item.subtitle}
 						</span>
 						<!--
@@ -130,7 +130,7 @@ import { tags ,projects,tools } from "../utils/data";
 		<div class="absolute top-0 w-full h-full bg-black/90 " >
 
 		</div>
-		<div class="absolute top-0 w-full h-full bg-gradient-to-t from-black z-10" >
+		<div class="absolute top-0 w-full h-full bg-gradient-to-t  from-darker z-10" >
 
 		</div>
 		
