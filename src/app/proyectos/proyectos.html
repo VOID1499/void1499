@@ -8,7 +8,7 @@
             <div class="flex gap-5 justify-end">
                 @for(link of proyecto.links;track $index){
                     <a [href]="link.href" target="_blank" rel="noopener">
-                        <img class="w-7 h-7" [src]="'/assets/icons/'+link.icon+'.svg'" alt="">
+                        <img class="w-7 h-7" [src]="'assets/icons/'+link.icon+'.svg'" alt="">
                     </a>
                 }
             </div>
