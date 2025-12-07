@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+
+@theme {
+  --color-dark: #2D333B;
+  --color-darker: #22272E;
+
+  --color-nebula: #4A5565;
+  --color-helix: #656A6E;
+  --color-white-noise: #E8E9ED;
+
+
+}
+
+.grid-background {
+  background-image:
+    linear-gradient(to right, #e5e5e5 1px, transparent 1px),
+    linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
+  background-size: 50px 50px; /* tamaño de las celdas */
+}

@@ -1,0 +1,91 @@
+{
+  "proyectos": [
+    {
+      "titulo": "Michisytarot.cl",
+      "descripcion": "Tienda Online SSR Angular / Backend Node.js\nProyecto backend sobre Strapi CMS - Integración con servicios de terceros como Khipu y AWS Simple Email Service.\nFrontend en Angular con renderizado del lado del servidor optimizado para SEO.\nServicio para generar meta tags y sitemaps dinámicos.\nServicio para añadir la etiqueta de Google Analytics.\nDespliegue sobre arquitectura de contenedores Docker.",
+      "links": [
+        {
+          "href": "https://michisytarot.cl",
+          "icon": "external-link"
+        },
+        {
+          "href": "https://github.com/voidorganization/michisytarot",
+          "icon": "github"
+        },
+        {
+          "href": "https://github.com/VOID1499/tienda-api",
+          "icon": "github"
+        }
+      ],
+      "tags": [
+        "Strapi CMS",
+        "Angular SSR",
+        "Khipu API",
+        "Docker",
+        "PostgreSQL",
+        "TailwindCss"
+      ]
+    },
+
+    {
+      "titulo": "Gestion de gimnasio y lavanderia",
+      "descripcion": "Herramienta para la gestión de reservas en lavandería y gimnasio de condominio.\nPermite coordinar el uso de espacios comunes como gimnasio (máximo de personas y horario por usuario).\nUso de lavandería con sistema de encolamiento o cola (en desarrollo).",
+      "links": [
+        {
+          "href": "https://github.com/VOID1499/tools.git",
+          "icon": "github"
+        },
+        {
+          "href": "https://void1499.github.io/tools/",
+          "icon": "external-link"
+        }
+      ],
+      "tags": [
+        "Supabase",
+        "DaisyUi",
+        "momentjs",
+        "TailwindCss"
+      ]
+    },
+
+    {
+      "titulo": "Control de acceso PWA",
+      "descripcion": "Control de acceso para seguridad en instalaciones con autenticación de personal mediante escaneo QR (cédula o generado automáticamente).\nBúsqueda por RUT.\nAlmacenamiento local para funcionalidad sin conexión.",
+      "links": [
+        {
+          "href": "https://main.d12qpgoedwt822.amplifyapp.com/",
+          "icon": "external-link"
+        },
+        {
+          "href": "https://github.com/VOID1499/access-control",
+          "icon": "github"
+        }
+      ],
+      "tags": [
+        "angularx-qrcode",
+        "html5-qrcode",
+        "momentjs",
+        "pwa",
+        "index db"
+      ]
+    },
+
+    {
+      "titulo": "Control de acceso API Strapi CMS",
+      "descripcion": "Modelado de estructura de datos para colecciones en Strapi y consumo de endpoints API REST JSON.\nAsignación de roles y permisos para el acceso según tipo de usuario.",
+      "links": [
+        {
+          "href": "https://github.com/VOID1499/access-control-api",
+          "icon": "github"
+        }
+      ],
+      "tags": [
+        "strapi cms",
+        "strapi cloud",
+        "postgres sql",
+        "api rest",
+        "postman"
+      ]
+    }
+  ]
+}

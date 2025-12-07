@@ -1,0 +1,16 @@
+<section class="w-full min-h-screen flex flex-col py-20 justify-center items-center">
+
+
+    <div class="flex flex-col w-4/5 gap-10">
+        <app-nav></app-nav>
+        <h1 class="text-2xl font-semibold rounded-sm p-2 bg-darker/50">{{name}}</h1>
+        
+        @if(filePath != ''){
+            <markdown
+            lineNumbers
+            [src]="filePath"
+            ></markdown>
+            
+        }
+    </div>
+</section>

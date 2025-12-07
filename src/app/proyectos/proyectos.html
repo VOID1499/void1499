@@ -1,0 +1,17 @@
+<ul class="flex flex-col bg-darker/50 p-5 gap-5 ">
+    @for(proyecto of proyectos;track $index){
+        <li>
+            <h1 class="text-lg">{{proyecto.titulo}}</h1>
+            <p class="text-nebula">
+                {{proyecto.descripcion}}
+            </p>
+            <div class="flex gap-5 justify-end">
+                @for(link of proyecto.links;track $index){
+                    <a [href]="link.href" target="_blank" rel="noopener">
+                        <img class="w-7 h-7" [src]="'/assets/icons/'+link.icon+'.svg'" alt="">
+                    </a>
+                }
+            </div>
+        </li>
+    }
+</ul>

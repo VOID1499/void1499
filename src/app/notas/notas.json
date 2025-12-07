@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Web Components",
+    "children": [
+      {
+        "name": "Que es web components",
+        "slug": "que-es-web-component",
+        "filepath": "assets/notas/web-components/que-es-web-component.md"
+      },
+        {
+        "name": "Custom elements",
+        "slug": "custom-elements",
+        "filepath": "assets/notas/web-components/custom-elements.md"
+      },
+         {
+        "name": "Shadow Root",
+        "slug": "shadow-root",
+        "filepath": "assets/notas/web-components/shadow-root.md"
+      }
+    ]
+  }
+ 
+]

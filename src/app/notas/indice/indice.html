@@ -1,0 +1,58 @@
+<section class="w-full min-h-screen flex flex-col  justify-center items-center ">
+
+  <div class="w-full p-5 lg:p-0 lg:w-3/5">
+
+    <app-nav class=""></app-nav>
+  
+    <div class="flex flex-wrap  gap-5 bg-darker/50 p-5 rounded-sm">
+      <h1 class="w-full  text-4xl mb-4">Mis Notas 🗎</h1>
+      <p>Estas notas son un atajo rapido a modo de documentación no oficial de algunas tecnologias.</p>
+  
+      <ul class="w-full">
+        @for(nota of nodes; track $index) {
+          <ng-container 
+            [ngTemplateOutlet]="nodeTemplate"
+            [ngTemplateOutletContext]="{ $implicit: nota }">
+          </ng-container>
+        }
+      </ul>
+    </div>
+  </div>
+
+
+</section>
+
+
+<!-- =======================================================
+     TEMPLATE RECURSIVO
+======================================================== -->
+<ng-template #nodeTemplate let-node>
+
+  <li class="mb-2">
+
+    <!-- Si tiene slug, es una NOTA -->
+    @if(node.slug) {
+      <a [routerLink]="['/notas', node.slug]" class="text-blue-500 hover:underline">
+        {{ node.name }}
+      </a>
+    }
+    <!-- Si NO tiene slug, es un FOLDER -->
+    @else {
+      <span class="font-bold">{{ node.name }}</span>
+    }
+
+    <!-- Renderizar hijos si existen -->
+    @if(node.children?.length > 0) {
+      <ul class="ml-4 border-l pl-3 mt-1">
+        @for(child of node.children; track $index) {
+          <ng-container 
+            [ngTemplateOutlet]="nodeTemplate"
+            [ngTemplateOutletContext]="{ $implicit: child }">
+          </ng-container>
+        }
+      </ul>
+    }
+
+  </li>
+
+</ng-template>
