@@ -30,9 +30,155 @@
     ]
   },
 
+  {
+    "name":"Angular",
+    "children":[
+      {
+        "name":"Componentes",
+        "children":[
+          {
+            "name":"Componente",
+            "slug":"componente",
+            "filepath":"assets/notas/angular/componente.md"
+          },
+          {
+            "name":"Ciclos de vida",
+            "slug":"ciclos-de-vida",
+            "filepath":"assets/notas/angular/ciclos-de-vida.md"
+          },
+           {
+            "name":"@Input",
+            "slug":"input",
+            "filepath":"assets/notas/angular/input.md"
+          },
+            {
+            "name":"@Ouput",
+            "slug":"output",
+            "filepath":"assets/notas/angular/output.md"
+          },
+          {
+            "name":"@ViewChild",
+            "slug":"viewchild",
+            "filepath":"assets/notas/angular/viwchild.md"
+          },
+             {
+            "name":"Renderer 2",
+            "slug":"renderer2",
+            "filepath":"assets/notas/angular/renderer2.md"
+          }
+        ]
+      },
+      {
+        "name":"Directivas",
+        "slug":"",
+        "children":[
+          {
+            "name":"Directivas estructurales",
+            "children":[
+              {
+                "name":"@for - ngFor",
+                "slug":"for",
+                "filepath":"assets/notas/angular/for.md"
+              },
+               {
+                "name":"@if - ngIf",
+                "slug":"if",
+                "filepath":"assets/notas/angular/if.md"
+              }
+            ]
+          },
+           {
+            "name":"Directivas de Atributo",
+            "children":[
+              {
+                "name":"ngClass",
+                "slug":"ngclass",
+                "filepath":"assets/notas/angular/ngclass.md"
+              }
+            ]
+          }
+        ] 
+      },
+         {
+        "name":"Routing",
+        "filepath":"",
+        "children":[
+          {
+            "name":"Routing SPA",
+            "slug":"routing-spa",
+            "filepath":"assets/notas/angular/routing-spa.md"
+          },
+          {
+            "name":"Router",
+            "slug":"router",
+            "filepath":"assets/notas/angular/router.md"
+          },
+           {
+            "name":"ActivatedRoute",
+            "slug":"activatedroute",
+            "filepath":"assets/notas/angular/activatedroute.md"
+          }
+        ]
+      },
+       {
+        "name":"Formularios",
+        "children":[
+          {
+            "name":"Reactive Forms (Formularios Reactivos)",
+            "slug":"reactive-forms",
+            "filepath":"assets/notas/angular/reactive-forms.md"
+          },
+           {
+            "name":"Template-driven Forms (Formularios Basados en Plantilla)",
+            "slug":"template-driven-forms",
+            "filepath":"assets/notas/angular/template-driven-forms.md"
+          }
+        ]
+      },
+      {
+        "name":"Servicios",
+        "children":[
+          {
+            "name":"Servicio",
+            "slug":"servicio",
+            "filepath":"assets/notas/angular/servicio.md"
+          }
+        ]
 
-
-    {
+      },
+        {
+        "name":"Pipes",
+        "children":[
+          {
+            "name":"Pipes",
+            "slug":"pipes",
+            "filepath":"assets/notas/angular/pipes.md"
+          }
+        ]
+      },
+         {
+        "name":"Guards",
+        "children":[
+          {
+            "name":"Guards",
+            "slug":"guards",
+            "filepath":"assets/notas/angular/guards.md"
+          }
+        ]
+      },
+      {
+        "name":"Interceptores",
+        "children":[
+          {
+            "name":"Interceptor",
+            "slug":"interceptor",
+            "filepath":"assets/notas/angular/interceptor.md"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name":"RXJS",
     "children":[
       {
