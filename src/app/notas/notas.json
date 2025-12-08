@@ -36,6 +36,12 @@
     "name":"RXJS",
     "children":[
       {
+        "name":"Conceptos clave",
+        "slug":"introduccion",
+        "filepath":"assets/notas/rxjs/conceptos-clave.md"
+
+      },
+      {
         "name":"Observables",
         "children":[
           {
@@ -67,13 +73,62 @@
           {
             "name":"Operadores de transformación",
             "children":[
-              
+              {
+                "name":"Map",
+                "slug":"map",
+                "filepath":"assets/notas/rxjs/operadores/map.md"
+                
+              },
+                  {
+                "name":"Filter",
+                "slug":"filter",
+                "filepath":"assets/notas/rxjs/operadores/filter.md"
+                
+              }
             ] 
           },
           {
             "name":"Operadores de concatenación",
             "children":[
+               {
+                "name":"Concat",
+                "slug":"concat",
+                "filepath":"assets/notas/rxjs/operadores/concat.md"
+              },
+              {
+                "name":"Concatmap",
+                "slug":"concatmap",
+                "filepath":"assets/notas/rxjs/operadores/concatmap.md"
+              }
+            ]
+          },
+             {
+            "name":"Operadores de cancelación",
+            "children":[
+              {
+                "name":"Switchmap",
+                "slug":"swithmap",
+                "filepath":"assets/notas/rxjs/operadores/switchmap.md"
 
+              },
+               {
+                "name":"Takeuntil",
+                "slug":"takeuntil",
+                "filepath":"assets/notas/rxjs/operadores/takeuntil.md"
+
+              }
+              
+            ]
+          },
+          {
+            "name":"Operadores utilitarios",
+            "children":[
+               {
+                "name":"Finalize",
+                "slug":"finalize",
+                "filepath":"assets/notas/rxjs/operadores/finalize.md"
+                
+              }
             ]
           }
         ]
