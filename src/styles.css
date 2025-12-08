@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+@import "github-markdown-css/github-markdown.css";
 
+
+.markdown-body {
+  @apply bg-transparent text-gray-200;
+}
 
 @theme {
   --color-dark: #2D333B;
@@ -19,3 +24,5 @@
     linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
   background-size: 50px 50px; /* tamaño de las celdas */
 }
+
+

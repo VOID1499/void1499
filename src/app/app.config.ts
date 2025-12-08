@@ -10,6 +10,6 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     provideHttpClient(withFetch()),
     provideRouter(routes),
-    provideMarkdown()
+    provideMarkdown({})
   ]
 };

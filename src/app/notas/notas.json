@@ -18,6 +18,67 @@
         "filepath": "assets/notas/web-components/shadow-root.md"
       }
     ]
+  },
+  {
+    "name":"OAuth 2",
+    "children":[
+      {
+        "name":"Que es y como funciona oauth 2",
+        "slug":"oatuh2",
+        "filepath":"assets/notas/oauth2/oauth2.md"
+      }
+    ]
+  },
+
+
+
+    {
+    "name":"RXJS",
+    "children":[
+      {
+        "name":"Observables",
+        "children":[
+          {
+            "name":"AsyncSubject",
+            "slug":"asyncsubject",
+            "filepath":"assets/notas/rxjs/observables/asyncsubject.md"
+          }
+          , {
+            "name":"Behaviorsubject",
+            "slug":"behaviorsubject",
+            "filepath":"assets/notas/rxjs/observables/behaviorsubject.md"
+          },
+          {
+            "name":"Replaysubject",
+            "slug":"replaysubject",
+            "filepath":"assets/notas/rxjs/observables/replaysubject.md"
+          },
+            {
+            "name":"Subject",
+            "slug":"subject",
+            "filepath":"assets/notas/rxjs/observables/subject.md"
+          }
+        ]
+      },
+
+      {
+        "name":"Operadores",
+        "children":[
+          {
+            "name":"Operadores de transformación",
+            "children":[
+              
+            ] 
+          },
+          {
+            "name":"Operadores de concatenación",
+            "children":[
+
+            ]
+          }
+        ]
+      }
+    ]
   }
  
 ]
