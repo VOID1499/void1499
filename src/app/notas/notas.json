@@ -1,4 +1,37 @@
 [
+
+  {
+    "name":"Docker",
+    "children":[
+      {
+        "name":"Imagenes",
+        "slug":"imagenes",
+        "filepath":"assets/notas/docker/imagenes.md"
+      },
+      {
+        "name":"Contenedores",
+        "slug":"contenedores",
+        "filepath":"assets/notas/docker/contenedores.md"
+      },
+      {
+        "name":"Registros y Repositorios",
+        "slug":"registros-y-repositorios",
+        "filepath":"assets/notas/docker/registros-y-repositorios.md"
+      },
+
+      {
+        "name":"Docker Compose",
+        "children":[
+          {
+            "name":"Que es compose",
+            "slug":"que-es-compose",
+            "filepath":"assets/notas/docker/que-es-compose.md"
+          }
+        ]
+      }
+    ]
+  },
+  
   {
     "name": "Web Components",
     "children": [
@@ -37,9 +70,9 @@
         "name":"Componentes",
         "children":[
           {
-            "name":"Componente",
-            "slug":"componente",
-            "filepath":"assets/notas/angular/componente.md"
+            "name":"Componentes",
+            "slug":"componentes",
+            "filepath":"assets/notas/angular/componentes.md"
           },
           {
             "name":"Ciclos de vida",
