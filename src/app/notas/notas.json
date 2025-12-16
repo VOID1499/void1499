@@ -5,13 +5,55 @@
     "children":[
       {
         "name":"Imagenes",
-        "slug":"imagenes",
-        "filepath":"assets/notas/docker/imagenes.md"
+        "children":[
+          {
+            "name":"Que es una imagen",
+            "slug":"que-es-una-imagen",
+            "filepath":"assets/notas/docker/que-es-una-imagen.md"
+          },
+          {
+            "name":"Construir imagenes",
+            "children":[
+              {
+                "name":"Capas de una imagen",
+                "slug":"capas-de-una-imagen",
+                "filepath":"assets/notas/docker/capas-de-una-imagen.md"
+              },
+              {
+                "name":"Como escribir un Dockerfile",
+                "slug":"como-escribir-un-docker-file",
+                "filepath":"assets/notas/docker/como-escribir-un-docker-file.md"
+
+              },
+              {
+                "name":"Shell y Exec Form",
+                "slug":"shelld-y-exec-form",
+                "filepath":"assets/notas/docker/shell-y-exec-form.md"
+              },
+               {
+                "name":"ENTRYPOINT y CMD",
+                "slug":"entrypoint-y-cmd",
+                "filepath":"assets/notas/docker/entrypoint-y-cmd.md"
+              }
+            ]
+
+          }
+        ]
       },
       {
         "name":"Contenedores",
-        "slug":"contenedores",
-        "filepath":"assets/notas/docker/contenedores.md"
+        "children":[
+          {
+            "name":"Que es un contenedor",
+            "slug":"que-es-un-contenedor",
+            "filepath":"assets/notas/docker/que-es-un-contenedor.md"
+          },
+            {
+            "name":"Ejecutar contenedores - Docker Run",
+            "slug":"docker-run",
+            "filepath":"assets/notas/docker/docker-run.md"
+          }
+        ]
       },
       {
         "name":"Registros y Repositorios",
