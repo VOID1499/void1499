@@ -1,6 +1,84 @@
 [
 
   {
+
+    "name":"Node Js",
+    "children":[
+      {
+        "name":"ES Modules (ESM) vs CommonJS (CJS)",
+        "slug":"esm-vs-cjs",
+        "filepath":"assets/notas/nodejs/esm-vs-cjs.md"
+      },
+        {
+        "name":"Objetos globales",
+        "slug":"objetos-globales",
+        "filepath":"assets/notas/nodejs/objetos-globales.md"
+
+      },
+      {
+        "name":"Modulos Nativos",
+        "children":[
+          {
+            "name":"OS (Sistema Operativo)",
+            "slug":"os",
+            "filepath":"assets/notas/nodejs/os.md"
+          },
+            {
+            "name":"FS (File System)",
+            "slug":"fs",
+            "filepath":"assets/notas/nodejs/fs.md"
+          },
+             {
+            "name":"Path",
+            "slug":"path",
+            "filepath":"assets/notas/nodejs/path.md"
+          },
+            {
+            "name":"HTTP",
+            "slug":"http",
+            "filepath":"assets/notas/nodejs/http.md"
+          }
+        ]
+      },
+      {
+        "name":"Express",
+        "children":[
+          {
+            "name":"Crear servidor con express",
+            "slug":"crear-servidor",
+            "filepath":"assets/notas/express/crear-servidor.md"
+          },
+          {
+            "name":"Routing",
+            "slug":"routing",
+            "filepath":"assets/notas/express/routing.md"
+          },
+          {
+            "name":"Middlewares",
+            "children":[
+              {
+                "name":"Middlewares nativos de Express",
+                "slug":"middlewares-estandar",
+                "filepath":"assets/notas/express/middlewares-estandar.md"
+              },
+               {
+                "name":"Middlewares Personalizados",
+                "slug":"middlewares-personalizados",
+                "filepath":"assets/notas/express/middlewares-personalizados.md"
+              }
+            ]            
+          }
+        ]
+      },
+          {
+        "name":"NestJs",
+        "children":[
+
+        ]
+      }
+    ]
+  },
+  {
     "name":"Docker",
     "children":[
       {
