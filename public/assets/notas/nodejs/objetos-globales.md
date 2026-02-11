@@ -17,7 +17,7 @@ global.miVariable = 123;
 
 ---
 
-## 2️⃣ `process` ⭐⭐⭐⭐⭐
+## 2️⃣ `process`
 
 Representa el **proceso de Node.js**.
 
@@ -44,7 +44,7 @@ process.on('SIGINT', () => {});
 
 ---
 
-## 3️⃣ `Buffer` ⭐⭐⭐⭐⭐
+## 3️⃣ `Buffer`
 
 Permite trabajar con **datos binarios**.
 
@@ -102,15 +102,55 @@ Internamente escribe en:
 
 ## 6️⃣ `__dirname` y `__filename` (CommonJS)
 
-Rutas del archivo actual.
+Cada archivo (módulo) tiene su propio __dirname y __filename.
+Node los inyecta al cargar el módulo, y se comportan como “globales” dentro de ese módulo, pero no fuera de él.
 
+**Suponiendo que tenemos esta estrucutura**
 ```js
-console.log(__dirname);
-console.log(__filename);
+proyecto/
+ ├─ src/
+ │   └─ server.js
+ └─ package.json
 ```
 
-⚠️ No existen directamente en ES Modules (se simulan).
+**Ejecutamos**
+```js
+node src/server.js
+```
+```
+__filename  -> /proyecto/src/server.js
+__dirname   -> /proyecto/src
+process.cwd() -> /proyecto
 
+```
+
+## Para qué se usan normalmente
+
+**Cargar archivos correctamente**
+
+```js
+const path = require('path');
+
+const filePath = path.join(__dirname, 'data.json');
+```
+
+
+## ⚠️ Nota importante (ES Modules)
+
+En ESM (type: "module"):
+
+❌ __dirname y __filename NO existen
+
+`Equivalente:`
+
+```js
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+```
 ---
 
 ## 7️⃣ Sistema de módulos CommonJS

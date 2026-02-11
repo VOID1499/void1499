@@ -53,11 +53,7 @@
       "descripcion": "Control de acceso para seguridad en instalaciones con autenticación de personal mediante escaneo QR (cédula o generado automáticamente).\nBúsqueda por RUT.\nAlmacenamiento local para funcionalidad sin conexión.",
       "links": [
         {
-          "href": "https://main.d12qpgoedwt822.amplifyapp.com/",
-          "icon": "external-link"
-        },
-        {
-          "href": "https://github.com/VOID1499/access-control",
+          "href": "https://github.com/VOID1499/control-de-acceso-pwa",
           "icon": "github"
         }
       ],

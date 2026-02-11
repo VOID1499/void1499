@@ -1,5 +1,17 @@
 [
 
+
+  {
+
+    "name":"TypeScript",
+    "children":[
+      {
+        "name":"Configurar y transpilar codigo de un proyecto",
+        "slug":"configuracion",
+        "filepath":"assets/notas/typescript/configuracion.md"
+      }
+    ]
+  },
   {
 
     "name":"Node Js",
