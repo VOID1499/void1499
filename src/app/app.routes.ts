@@ -19,6 +19,9 @@ export const routes: Routes = [
         path: "certificaciones",
         component: Certificaciones
     },
+    /**
+     * 
+     * 
     {
         path: "notas",
         component: Notas,
@@ -34,4 +37,5 @@ export const routes: Routes = [
             },
         ]        
     },
+    */
 ];
